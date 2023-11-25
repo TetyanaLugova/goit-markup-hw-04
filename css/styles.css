@@ -33,12 +33,16 @@ margin-right: auto;}
 
 /* header */
 
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .container-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo-accent-header {
@@ -319,7 +323,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
    .link-icon-item:hover,
    .link-icon-item:focus { 
-    background-color: rgba(49, 208, 170, 1);
+    background-color: #404bbf;;
   }
 
   .icon-team {
@@ -359,11 +363,11 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       overflow: hidden;
     }
 
-    .portfolio-item:hover .text-overlay {
+    .portfolio-item:hover .portfolio-overlay>p {
        transform: translateY(0);
     }
 
-     .text-overlay {
+     .portfolio-overlay > p {
       display: flex;
       color: #F4F4FD;
       width: 296px;
@@ -417,6 +421,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       letter-spacing: 0.32px;
       margin-bottom: 16px;
      }
+
+     .icon-wrap-footer {
+      width: 40px;
+      height: 40px;
+
+     }
     
      .link-icon-footer {
         display: flex;
@@ -426,14 +436,12 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         justify-content: center;
         background-color: #4D5AE5;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       .link-icon-footer:hover,
       .link-icon-footer:focus {
-        background-color:rgba(49, 208, 170, 1) ;
+        background-color:#31d0aa; ;
       }
 
       .link-icon-footer {
